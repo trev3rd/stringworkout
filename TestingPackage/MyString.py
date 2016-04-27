@@ -23,13 +23,22 @@ class MyString():
 
     #Returns a string that consists of the substring between start and end indexes (both included) in the current string.
     #Index 1 corresponds to the first character in the current string.'''
-    def getSubstring( self,start, end):
+    def getSubstring(self,start, end):
+        sub=self.str
+        sub=sub[1:5]
 
-        return 1
+
+
+
+        return sub
     #Breaks the string down, and returns it as a character string
     def getCharList(self):
-
-        return 1
+        charlist =[]
+        counter = len(self.str)
+        print(counter)
+        for a in range(0,counter):
+            charlist.append(self.str[a])
+        return charlist
 
     #Returns the index of the first occurrence of a character in the current string.
     #Index 1 corresponds to the first character in the current string.
@@ -41,12 +50,18 @@ class MyString():
 
     # Removes all occurrences of the specified character from the current string.
     def removeChar(self,c):
+        lett=self.str
+        lett=lett.replace("k","")
 
-        return 1
 
+
+
+        return lett
 
     #Invert the current string.
     def invert(self):
+        flip =self.str[::-1]
 
 
-        return 1
+
+        return flip
